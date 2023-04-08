@@ -10,3 +10,12 @@
 .fill-y { 
     min-height: 100%;
 }
+
+a.link {
+    color: dodgerblue;
+    transition: .2s;
+}
+a.link:hover { color: skyblue; }
+
+.text-c-001 { color: $color-001; }
+.bg-c-001 { background-color: $color-001; }

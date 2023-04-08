@@ -1,7 +1,9 @@
 import Navbar from "./components/navbar/navbar";
 import Pricing from "./components/pages/pricing";
 import navigation from "./data/navigation.json";
+
 import "./assets/css/main.min.css";
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 
 const nav_data = navigation.navigation;
 

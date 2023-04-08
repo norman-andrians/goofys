@@ -1,0 +1,23 @@
+{
+    "basic": [
+        "Full advice from professional game engineers",
+        "Maximum 3 contributors",
+        "Assets supported Unity, Unreal, Godot, More",
+        "Unlimited management",
+        "5 TB storage"
+    ],
+    "pro": [
+        "Everything in basic plan",
+        "Unlimited Contributor and Collaborator",
+        "Unlimited Assets and Plugins for development",
+        "Trufi SART Debugging",
+        "10 TB storage"
+    ],
+    "premium": [
+        "Everything in Pro plan",
+        "Industry Success",
+        "Unlimited Technical support",
+        "Build Server license capacity",
+        "40 TB Storage"
+    ]
+}
