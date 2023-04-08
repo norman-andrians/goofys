@@ -1,0 +1,12 @@
+@import "./fonts.scss";
+
+@import "./variables.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./navbar.scss";
+@import "./components.scss";
+
+@import "./pages/pricing.scss";
+
+.fill-y { 
+    min-height: 100%;
+}
