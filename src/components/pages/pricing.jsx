@@ -30,7 +30,7 @@ function Pricing() {
     return <main className="pricing my-3">
         <section className="text-center text-white">
             <header className="py-2">
-                <h1 className="h1 fw-bold ff-inter">Select Your Plan</h1>
+                <h1 className="fw-bold ff-inter big-head">Select Your Plan</h1>
                 <div className="ff-inter opacity-75">Take your time, choose the best plan that you need</div>
             </header>
             <label onClick={togglePricingPlans} className="my-4">
@@ -51,7 +51,7 @@ function Pricing() {
                     name={"Pro Plan"}
                     price={proPrice}
                     unit={"month"}
-                    desc={"Ideal for individual developers"}
+                    desc={"Special for Indie team make the dream of creativity come true"}
                     benefits={Benefits.pro}
                     popular={true}
                 />
@@ -59,7 +59,7 @@ function Pricing() {
                     name={"Basic Plan"}
                     price={premiumPrice}
                     unit={"month"}
-                    desc={"Ideal for individual developers"}
+                    desc={"Access success at scale for large organizations with ambitious goals."}
                     benefits={Benefits.premium}
                 />
             </div>
