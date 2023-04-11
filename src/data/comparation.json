@@ -1,0 +1,53 @@
+{
+    "plans": [
+        "Basic",
+        "Pro",
+        "Premium"
+    ],
+    "benefits": [
+        {
+            "name": "Contributors",
+            "rate": [
+                "3",
+                "Unlimited",
+                "Unlimited"
+            ]
+        },
+        {
+            "name": "Maksimum storage",
+            "rate": [
+                "5 TB",
+                "10 TB",
+                "40 TB"
+            ]
+        },
+        {
+            "name": "Game Assets",
+            "rate": [ 2, 2, 2 ]
+        },
+        {
+            "name": "Plugins",
+            "rate": [ 1, 2, 2 ]
+        },
+        {
+            "name": "Real-time sync",
+            "rate": [ 1, 2, 2 ]
+        },
+        {
+            "name": "Trufi SART Debugging",
+            "rate": [ 0, 1, 2 ]
+        },
+        {
+            "name": "Techincal Support",
+            "rate": [ 0, 0, 2 ]
+        },
+        {
+            "name": "Build server license capacity",
+            "rate": [ 0, 0, 2 ]
+        },
+        {
+            "name": "Some benefits",
+            "rate": [ 0, 0, 2 ]
+        }
+    ]
+}

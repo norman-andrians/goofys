@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import PricingSwitch from "../switches/pricing-switch";
 import PlanCard from "../cards/plan-card";
+import ComparationTable from "../tables/comparation";
+
 import Benefits from "../../data/pricing-benefits.json";
+import Comparations from "../../data/comparation.json";
 
 function Pricing() {
     const [ isMonth, setIsMonth ] = useState(true);
@@ -9,6 +12,12 @@ function Pricing() {
     const [ basicPrice, setBasic ] = useState(10);
     const [ proPrice, setPro ] = useState(25);
     const [ premiumPrice, setPremium ] = useState(50);
+
+    const [ showComparation, setShowComp ] = useState(false);
+
+    function toggleComparation() {
+        setShowComp(!showComparation);
+    }
 
     function togglePricingPlans() {
         switch (isMonth) {
@@ -64,7 +73,22 @@ function Pricing() {
                 />
             </div>
         </section>
-        <div className="py-5 my-5"></div>
+        <section className="container py-5 text-center">
+            <div style={{ height: showComparation ? 'fit-content' : '0', overflowY: "hidden" }}>
+                <ComparationTable
+                    plans={Comparations.plans}
+                    benefits={Comparations.benefits}
+                />
+            </div>
+            <button
+                className="text-primary d-flex align-items-center m-auto"
+                style={{ background: 'none', border: 'none' }}
+                onClick={toggleComparation}
+            >
+                <div className="">{showComparation ? <>Hide comparation</> : <>Compare all plans</>}</div>
+                <div className=""><i class="bi bi-arrow-down-short h3"></i></div>
+            </button>
+        </section>
     </main>
 }
 
