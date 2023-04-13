@@ -7,6 +7,11 @@ import ComparationTable from "../tables/comparation";
 import Benefits from "../../data/pricing-benefits.json";
 import Comparations from "../../data/comparation.json";
 
+import LogoUnity from "../../assets/images/Unity-logo 1.png";
+import LogoUnreal from "../../assets/images/Unreal_Engine_Logo 1.png";
+import LogoGodot from "../../assets/images/logo_small_monochrome_light 1.png";
+import LogoGamemaker from "../../assets/images/GameMakerlogo 1.png";
+
 function Pricing() {
     const [ isMonth, setIsMonth ] = useState(true);
 
@@ -47,7 +52,7 @@ function Pricing() {
                 <PricingSwitch month={isMonth} />
             </label>
         </section>
-        <section className="text-center ff-inter my-5">
+        <section className="text-center ff-inter mt-5">
             <div className="opacity-75">Cancel anytime, <a href="#" className="link link-offset-2">Terms apply</a></div>
             <div className="d-flex my-5">
                 <PlanCard
@@ -74,7 +79,7 @@ function Pricing() {
                 />
             </div>
         </section>
-        <section className="container py-5 text-center">
+        <section className="container pb-5 text-center">
             <div className="basic-dropdown" style={{ height: showComparation ? '900px' : '0px', maxHeight: "900px" }}>
                 <ComparationTable
                     plans={Comparations.plans}
@@ -99,8 +104,15 @@ function Pricing() {
                 </div>
             </button>
         </section>
-        <section className="my-3">
-            
+        <section className="my-3 d-flex align-items-center justify-content-between">
+            <div className="ff-inter text-white-50">Trusted by the best game engines</div>
+            <div className="opacity-50 d-flex align-items-center">
+                {
+                    [LogoUnity, LogoUnreal, LogoGodot, LogoGamemaker].map((val) => 
+                        <img src={val} alt="Game Engine" className="ms-4" style={{ height: "50px" }} />
+                    )
+                }
+            </div>
         </section>
     </main>
 }
