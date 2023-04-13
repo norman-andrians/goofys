@@ -111,3 +111,36 @@
 .basic-dropdown-active {
     height: fit-content;
 }
+
+.dropdown-faq {
+    margin: 30px 0;
+}
+.dropdown-faq > .question {
+    color: white;
+    width: 100%;
+    background-color: $color-001;
+    border: 1px solid $color-002;
+    border-radius: 8px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.dropdown-faq > .answer {
+    background-color: $color-003;
+    border-radius: 0 0 8px 8px;
+    margin-top: -10px;
+    font-size: small;
+    overflow-y: hidden;
+}
+.dropdown-faq > .answer > div {
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.dropdown-faq > .question > .icon > img,
+.dropdown-faq > .answer,
+.dropdown-faq > .answer > div {
+    transition: .2s ease-out;
+}

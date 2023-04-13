@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 
+// Components
 import PricingSwitch from "../switches/pricing-switch";
 import PlanCard from "../cards/plan-card";
 import ComparationTable from "../tables/comparation";
+import FAQDropdown from "../dropdown/faqs-dropdown";
 
+// Data(s)
 import Benefits from "../../data/pricing-benefits.json";
 import Comparations from "../../data/comparation.json";
 
+// Images
 import LogoUnity from "../../assets/images/Unity-logo 1.png";
 import LogoUnreal from "../../assets/images/Unreal_Engine_Logo 1.png";
 import LogoGodot from "../../assets/images/logo_small_monochrome_light 1.png";
@@ -42,7 +46,7 @@ function Pricing() {
         setIsMonth(!isMonth);
     }
 
-    return <main className="pricing mt-3">
+    return <main className="container mt-3">
         <section className="text-center text-white">
             <header className="py-2">
                 <h1 className="fw-bold ff-inter big-head">Select Your Plan</h1>
@@ -104,7 +108,7 @@ function Pricing() {
                 </div>
             </button>
         </section>
-        <section className="my-3 d-flex align-items-center justify-content-between">
+        <section className="pb-5 mt-3 mb-5 d-flex align-items-center justify-content-between">
             <div className="ff-inter text-white-50">Trusted by the best game engines</div>
             <div className="opacity-50 d-flex align-items-center">
                 {
@@ -112,6 +116,15 @@ function Pricing() {
                         <img src={val} alt="Game Engine" className="ms-4" style={{ height: "50px" }} />
                     )
                 }
+            </div>
+        </section>
+        <section className="pt-5 mt-5">
+            <header className="text-center">
+                <h1 className="h1 ff-inter fw-bold big-head">FAQs</h1>
+                <p className="ff-inter opacity-75">Can't find the answer you're looking for? <a href="#" className="link link-offset-2">Contact us!</a></p>
+            </header>
+            <div className="">
+                <FAQDropdown question="Do you know the way" answer="No idk." />
             </div>
         </section>
     </main>
