@@ -13,9 +13,9 @@ function ComparationTable(props) {
     const plans = props.plans;
     const benefits = props.benefits;
 
-    return <table className='table text-white ff-open-sans'>
+    return <table className='table comparation-table text-white ff-open-sans'>
         <thead>
-            <tr style={{ borderColor: "transparent" }}>
+            <tr>
                 <th></th>
                 {
                     plans.map((val) => 

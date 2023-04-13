@@ -90,7 +90,21 @@
     bottom: 0;
     margin: 35px;
 }
-
 .plan-card-popular {
     border: 2px solid $secondary;
+}
+
+
+.comparation-table > thead > tr {
+    border-color: transparent;
+}
+
+
+.basic-dropdown {
+    overflow-y: hidden;
+    transition: .5s;
+    height: 0px;
+}
+.basic-dropdown-active {
+    height: fit-content;
 }

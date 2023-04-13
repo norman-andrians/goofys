@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import PricingSwitch from "../switches/pricing-switch";
 import PlanCard from "../cards/plan-card";
 import ComparationTable from "../tables/comparation";
@@ -74,7 +75,7 @@ function Pricing() {
             </div>
         </section>
         <section className="container py-5 text-center">
-            <div style={{ height: showComparation ? 'fit-content' : '0', overflowY: "hidden" }}>
+            <div className="basic-dropdown" style={{ height: showComparation ? '900px' : '0px' }}>
                 <ComparationTable
                     plans={Comparations.plans}
                     benefits={Comparations.benefits}
@@ -84,9 +85,11 @@ function Pricing() {
                 className="text-primary d-flex align-items-center m-auto"
                 style={{ background: 'none', border: 'none' }}
                 onClick={toggleComparation}
-            >
+                >
                 <div className="">{showComparation ? <>Hide comparation</> : <>Compare all plans</>}</div>
-                <div className=""><i class="bi bi-arrow-down-short h3"></i></div>
+                <div className="" style={{ transform: showComparation ? 'rotateZ(180deg)' : 'rotateZ(0deg)' }}>
+                    <i class="bi bi-arrow-down-short h3"></i>
+                </div>
             </button>
         </section>
     </main>
