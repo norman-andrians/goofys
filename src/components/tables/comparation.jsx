@@ -19,7 +19,7 @@ function ComparationTable(props) {
                 <th></th>
                 {
                     plans.map((val) => 
-                        <th className="col pb-4 text-center text-white ff-open-sans fw-bold h5">{val}</th>
+                        <th className="col pb-2 pt-5 text-center text-white ff-open-sans fw-bold h5">{val}</th>
                     )
                 }
             </tr>
