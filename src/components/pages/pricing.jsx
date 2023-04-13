@@ -59,7 +59,7 @@ function Pricing() {
         </section>
         <section className="text-center ff-inter mt-5">
             <div className="opacity-75">Cancel anytime, <a href="#" className="link link-offset-2">Terms apply</a></div>
-            <div className="d-flex my-5">
+            <div className="d-flex mt-5 mb-4">
                 <PlanCard
                     name={"Basic Plan"}
                     price={basicPrice}
@@ -119,8 +119,8 @@ function Pricing() {
                 }
             </div>
         </section>
-        <section className="pt-5 mt-5">
-            <header className="text-center">
+        <section className="py-5 my-5">
+            <header className="text-center mb-5">
                 <h1 className="h1 ff-inter fw-bold big-head">FAQs</h1>
                 <p className="ff-inter opacity-75">Can't find the answer you're looking for? <a href="#" className="link link-offset-2">Contact us!</a></p>
             </header>
