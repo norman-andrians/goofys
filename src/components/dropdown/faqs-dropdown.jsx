@@ -19,7 +19,6 @@ function FAQDropdown(props) {
         </button>
         <article className="answer" style={{ height: drop ? "200px" : "0px" }}>
             <div style={{
-                fontSize: drop ? "1rem" : ".6rem",
                 opacity: drop ? 1 : 0
             }}>
                 {answer}

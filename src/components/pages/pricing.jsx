@@ -9,6 +9,7 @@ import FAQDropdown from "../dropdown/faqs-dropdown";
 // Data(s)
 import Benefits from "../../data/pricing-benefits.json";
 import Comparations from "../../data/comparation.json";
+import FAQs from "../../data/faqs.json";
 
 // Images
 import LogoUnity from "../../assets/images/Unity-logo 1.png";
@@ -124,7 +125,14 @@ function Pricing() {
                 <p className="ff-inter opacity-75">Can't find the answer you're looking for? <a href="#" className="link link-offset-2">Contact us!</a></p>
             </header>
             <div className="">
-                <FAQDropdown question="Do you know the way" answer="No idk." />
+                {
+                    FAQs.map((val) => 
+                        <FAQDropdown
+                            question={val.question}
+                            answer={val.answer}
+                        />
+                    )
+                }
             </div>
         </section>
     </main>
