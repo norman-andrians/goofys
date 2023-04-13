@@ -14,7 +14,7 @@ Make sure you install [Node.js](nodejs.org) for local development, or you can us
 
 This project does not store React in the repo so use the following command line
 ```
-npm install react react-dom bootstrap@5.3.0-alpha3
+npm install react react-dom classnames bootstrap@5.3.0-alpha3
 ```
 also I added bootstrap, I recommend using the latest version 5.3.0 or above
 
