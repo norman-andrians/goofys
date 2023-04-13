@@ -37,7 +37,7 @@ function Pricing() {
         setIsMonth(!isMonth);
     }
 
-    return <main className="pricing my-3">
+    return <main className="pricing mt-3">
         <section className="text-center text-white">
             <header className="py-2">
                 <h1 className="fw-bold ff-inter big-head">Select Your Plan</h1>
@@ -75,10 +75,14 @@ function Pricing() {
             </div>
         </section>
         <section className="container py-5 text-center">
-            <div className="basic-dropdown" style={{ height: showComparation ? '900px' : '0px' }}>
+            <div className="basic-dropdown" style={{ height: showComparation ? '900px' : '0px', maxHeight: "900px" }}>
                 <ComparationTable
                     plans={Comparations.plans}
                     benefits={Comparations.benefits}
+                    style={{
+                        opacity: showComparation ? 1 : 0,
+                        transition: ".5s"
+                    }}
                 />
             </div>
             <button
@@ -87,10 +91,16 @@ function Pricing() {
                 onClick={toggleComparation}
                 >
                 <div className="">{showComparation ? <>Hide comparation</> : <>Compare all plans</>}</div>
-                <div className="" style={{ transform: showComparation ? 'rotateZ(180deg)' : 'rotateZ(0deg)' }}>
+                <div className="" style={{
+                    transform: showComparation ? 'rotateZ(180deg)' : 'rotateZ(0deg)',
+                    transition: ".4s"
+                    }}>
                     <i class="bi bi-arrow-down-short h3"></i>
                 </div>
             </button>
+        </section>
+        <section className="my-3">
+            
         </section>
     </main>
 }

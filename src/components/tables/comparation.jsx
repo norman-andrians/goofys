@@ -13,7 +13,7 @@ function ComparationTable(props) {
     const plans = props.plans;
     const benefits = props.benefits;
 
-    return <table className='table comparation-table text-white ff-open-sans'>
+    return <table className='table comparation-table text-white ff-open-sans' style={props.style}>
         <thead>
             <tr>
                 <th></th>

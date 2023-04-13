@@ -98,11 +98,14 @@
 .comparation-table > thead > tr {
     border-color: transparent;
 }
+.comparation-table > thead > tr > th.col {
+    width: 200px;
+}
 
 
 .basic-dropdown {
     overflow-y: hidden;
-    transition: .5s;
+    transition: .5s ease-out;
     height: 0px;
 }
 .basic-dropdown-active {
