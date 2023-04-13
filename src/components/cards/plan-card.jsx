@@ -9,7 +9,7 @@ function PlanCard (props) {
     const benefits = props.benefits;
     const popular = props.popular == null ? false : props.popular;
 
-    return <div className={classNames('plan-card', 'container-fluid', 'mx-3', {'plan-card-popular' : popular})}>
+    return <div className={classNames('plan-card', 'container-fluid', 'mx-2', 'mx-xl-3', {'plan-card-popular' : popular})}>
         <header>
             <h3 className={classNames('h3', 'fw-bold', 'ff-inter', {'text-primary' : !popular}, {'text-secondary' : popular})}>{name}</h3>
             <div className="mt-4">

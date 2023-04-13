@@ -50,7 +50,7 @@ function Pricing() {
     return <main className="container mt-3">
         <section className="text-center text-white">
             <header className="py-2">
-                <h1 className="fw-bold ff-inter big-head">Select Your Plan</h1>
+                <h1 className="fw-bold ff-inter display-5">Select Your Plan</h1>
                 <div className="ff-inter opacity-75">Take your time, choose the best plan that you need</div>
             </header>
             <label onClick={togglePricingPlans} className="my-4">
@@ -121,7 +121,7 @@ function Pricing() {
         </section>
         <section className="py-5 my-5">
             <header className="text-center mb-5">
-                <h1 className="h1 ff-inter fw-bold big-head">FAQs</h1>
+                <h1 className="h1 ff-inter fw-bold display-5">FAQs</h1>
                 <p className="ff-inter opacity-75">Can't find the answer you're looking for? <a href="#" className="link link-offset-2">Contact us!</a></p>
             </header>
             <div className="">
