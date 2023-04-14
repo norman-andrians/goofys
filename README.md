@@ -10,7 +10,7 @@ Feel free to customize.
 
 ## Installations
 
-Make sure you install [Node.js](nodejs.org) for local development, or you can use [Yarn](https://classic.yarnpkg.com/en/).
+Make sure you install [Node.js](https://nodejs.org) for local development, or you can use [Yarn](https://classic.yarnpkg.com/en/).
 
 This project does not store React in the repo so use the following command line
 ```
