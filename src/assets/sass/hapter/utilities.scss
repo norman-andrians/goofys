@@ -7,7 +7,7 @@ $hapter-additional-spacers: (
 );
 
 
-// I'm too lazy to make some utilities algorithms
+// I'm too lazy to make some class algorithms
 @each $val, $valke in $hapter-additional-spacers {
     .pt-#{$val} { padding-top: $valke; }
     .pb-#{$val} { padding-bottom: $valke; }
