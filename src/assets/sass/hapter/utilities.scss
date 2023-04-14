@@ -6,6 +6,10 @@ $hapter-additional-spacers: (
     10: 20rem,
 );
 
+// Opacity division, meaning that the opacity class value can be split by division or percentage. 
+// If the value is 10 then the opacity utility is divided into 10 and each opacity value is 0.1 (10/100 or 10%).
+$hapter-opacity-diffision: 10;
+$hapter-opacity-svalue: calc($hapter-opacity-diffision / 100); 
 
 // I'm too lazy to make some class algorithms
 @each $val, $valke in $hapter-additional-spacers {
@@ -23,4 +27,12 @@ $hapter-additional-spacers: (
         padding-left: $valke;
         padding-right: $valke;
     }
+}
+
+$hapter-opacity-value: 0;
+
+@for $opacity from 0 through $hapter-opacity-diffision - 1 {
+    .opacity-#{$opacity} { opacity: $hapter-opacity-value; }
+
+    $hapter-opacity-value: calc($hapter-opacity-value + $hapter-opacity-svalue);
 }
