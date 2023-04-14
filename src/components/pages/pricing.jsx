@@ -47,7 +47,7 @@ function Pricing() {
         setIsMonth(!isMonth);
     }
 
-    return <main className="container mt-3">
+    return <main className="container pt-8">
         <section className="text-center text-white">
             <header className="py-2">
                 <h1 className="fw-bold ff-inter display-5">Select Your Plan</h1>

@@ -2,6 +2,13 @@ nav {
     height: 100px;
 }
 
+.h-navbar {
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    z-index: 5;
+}
+
 .hapter-navbar {
     min-width: 50%;
 }

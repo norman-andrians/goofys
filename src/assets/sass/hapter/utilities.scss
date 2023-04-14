@@ -1,0 +1,26 @@
+$hapter-additional-spacers: (
+    6: 4rem,
+    7: 5rem,
+    8: 10rem,
+    9: 15rem,
+    10: 20rem,
+);
+
+
+// I'm too lazy to make some utilities algorithms
+@each $val, $valke in $hapter-additional-spacers {
+    .pt-#{$val} { padding-top: $valke; }
+    .pb-#{$val} { padding-bottom: $valke; }
+    .ps-#{$val} { padding-left: $valke; }
+    .pe-#{$val} { padding-right: $valke; }
+
+    .py-#{$val} {
+        padding-top: $valke;
+        padding-bottom: $valke;
+    }
+
+    .px-#{$val} {
+        padding-left: $valke;
+        padding-right: $valke;
+    }
+}
