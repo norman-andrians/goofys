@@ -1,0 +1,31 @@
+
+
+// default bootstrap breakpoints
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+// In theory, there are only 6 hierarchical levels for headings,
+// given that bootstrap can only change the font size based on headings. 
+//
+// The font size needs to be customized to be smaller according to the needs of the project,
+// so I added it to be more and smaller.
+$sizes: (
+    7: 0.75rem,
+    8: 0.5rem,
+    9: 0.25rem,
+    10: 0.15rem,
+    11: 0.10rem,
+    12: 0.05rem
+);
+
+@each $media, $breakpoint in $breakpoints {
+    @media (min-width: #{$breakpoint}) {
+
+    }
+}
