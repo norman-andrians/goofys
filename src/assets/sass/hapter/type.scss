@@ -24,8 +24,12 @@ $sizes: (
     12: 0.05rem
 );
 
-@each $media, $breakpoint in $breakpoints {
-    @media (min-width: #{$breakpoint}) {
-
+@each $infix, $dimension in $breakpoints {
+    @media (min-width: #{$dimension}) {
+        @each $level, $size in $sizes {
+            .fs-#{$infix}-#{$level} {
+                font-size: #{$size};
+            }
+        }
     }
 }
