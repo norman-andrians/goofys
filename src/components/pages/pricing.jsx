@@ -17,8 +17,6 @@ import LogoUnreal from "../../assets/images/Unreal_Engine_Logo 1.png";
 import LogoGodot from "../../assets/images/logo_small_monochrome_light 1.png";
 import LogoGamemaker from "../../assets/images/GameMakerlogo 1.png";
 
-import "../../assets/css/misc/type.min.css";
-
 function Pricing() {
     const [ isMonth, setIsMonth ] = useState(true);
 
@@ -61,7 +59,7 @@ function Pricing() {
         </section>
         <section className="text-center ff-inter mt-5">
             <div className="opacity-75">Cancel anytime, <a href="#" className="link link-offset-2">Terms apply</a></div>
-            <div className="d-flex mt-5 mb-4">
+            <div className="d-flex flex-column flex-lg-row mt-5 mb-4">
                 <PlanCard
                     name={"Basic Plan"}
                     price={basicPrice}
