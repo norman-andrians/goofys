@@ -35,9 +35,17 @@ $hapter-font-sizes: (
 
 @each $infix, $dimension in $breakpoints {
     @each $level, $size in $font-sizes {
+        // blocking !important rule from bootstrap
+        .fs-#{$level} { font-size: #{$size}; }
+        
+        // well I'm adding an important one
+        .fs-#{$level}-i { 
+            font-size: #{$size} !important;
+        }
+
         @media (min-width: #{$dimension}) {
             .fs-#{$infix}-#{$level} {
-                font-size: #{$size};
+                font-size: #{$size} !important;
             }
         }
     }
@@ -45,9 +53,10 @@ $hapter-font-sizes: (
         .fs-#{$level} {
             font-size: #{$size};
         }
+
         @media (min-width: #{$dimension}) {
             .fs-#{$infix}-#{$level} {
-                font-size: #{$size};
+                font-size: #{$size} !important;
             }
         }
     }
