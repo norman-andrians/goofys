@@ -10,12 +10,21 @@ $breakpoints: (
     xxl: 1400px
 );
 
+// Just regular font-size I got from bootstrap docs
+$font-sizes: (
+    1: 2.5rem,
+    2: 2rem,
+    3: 1.75rem,
+    4: 1.5rem,
+    5: 1.25rem,
+    6: 1rem
+);
 // In theory, there are only 6 hierarchical levels for headings,
 // given that bootstrap can only change the font size based on headings. 
 //
 // The font size needs to be customized to be smaller according to the needs of the project,
 // so I added it to be more and smaller.
-$sizes: (
+$hapter-font-sizes: (
     7: 0.75rem,
     8: 0.5rem,
     9: 0.25rem,
@@ -25,8 +34,18 @@ $sizes: (
 );
 
 @each $infix, $dimension in $breakpoints {
-    @media (min-width: #{$dimension}) {
-        @each $level, $size in $sizes {
+    @each $level, $size in $font-sizes {
+        @media (min-width: #{$dimension}) {
+            .fs-#{$infix}-#{$level} {
+                font-size: #{$size};
+            }
+        }
+    }
+    @each $level, $size in $hapter-font-sizes {
+        .fs-#{$level} {
+            font-size: #{$size};
+        }
+        @media (min-width: #{$dimension}) {
             .fs-#{$infix}-#{$level} {
                 font-size: #{$size};
             }

@@ -17,7 +17,7 @@ import LogoUnreal from "../../assets/images/Unreal_Engine_Logo 1.png";
 import LogoGodot from "../../assets/images/logo_small_monochrome_light 1.png";
 import LogoGamemaker from "../../assets/images/GameMakerlogo 1.png";
 
-import "../../assets/css/misc/type.css";
+import "../../assets/css/misc/type.min.css";
 
 function Pricing() {
     const [ isMonth, setIsMonth ] = useState(true);

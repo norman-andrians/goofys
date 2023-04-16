@@ -28,7 +28,7 @@ function PlanCard (props) {
                 benefits.map((val) => 
                     <div className="check-list d-flex align-items-center">
                         <div className="h5 mb-0"><i class="bi bi-check"></i></div>
-                        <div className="ff-open-sans fs-xl-8 ms-2">{val}</div>
+                        <div className="ff-open-sans fs-8 fs-xxl-7 ms-2">{val}</div>
                     </div>
                 )
             }
