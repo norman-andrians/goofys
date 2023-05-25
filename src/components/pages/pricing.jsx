@@ -109,8 +109,8 @@ function Pricing() {
                 </div>
             </button>
         </section>
-        <section className="pb-5 mt-3 mb-5 d-flex align-items-center justify-content-between">
-            <div className="ff-inter text-white-50">Trusted by the best game engines</div>
+        <section className="pb-5 mt-3 mb-5 d-block d-sm-flex align-items-center justify-content-between text-center text-sm-start">
+            <div className="ff-inter text-white-50 mb-4 mb-sm-0">Trusted by the best game engines</div>
             <div className="opacity-50 d-flex align-items-center">
                 {
                     [LogoUnity, LogoUnreal, LogoGodot, LogoGamemaker].map((val) => 

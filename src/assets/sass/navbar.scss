@@ -25,6 +25,19 @@ nav {
     opacity: .8;
 }
 
+.hapter-burger {
+    position: relative;
+}
+.hapter-burger > .hapter-burger-item {
+    width: 50px;
+    height: 7px;
+}
+
+.hapter-navbile > ul {
+    transition: .2s ease-out;
+    top: 100px;
+}
+
 @media (min-width: map-get($grid-breakpoints, "lg")) {
     .hapter-navbar {
         min-width: 50%;
