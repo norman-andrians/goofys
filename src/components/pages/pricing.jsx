@@ -47,7 +47,7 @@ function Pricing() {
         setIsMonth(!isMonth);
     }
 
-    return <main className="container pt-8">
+    return <main className="container pt-8 px-4 px-sm-0">
         <section className="text-center text-white">
             <header className="py-2">
                 <h1 className="fw-bold ff-inter display-5">Select Your Plan</h1>
@@ -111,10 +111,10 @@ function Pricing() {
         </section>
         <section className="pb-5 mt-3 mb-5 d-block d-sm-flex align-items-center justify-content-between text-center text-sm-start">
             <div className="ff-inter text-white-50 mb-4 mb-sm-0">Trusted by the best game engines</div>
-            <div className="opacity-50 d-flex align-items-center">
+            <div className="opacity-50 d-flex flex-wrap justify-content-center">
                 {
                     [LogoUnity, LogoUnreal, LogoGodot, LogoGamemaker].map((val) => 
-                        <img src={val} alt="Game Engine" className="ms-4" style={{ height: "50px" }} />
+                        <img src={val} alt="Game Engine" className="ms-4 ms-sm-0 mx-4 mb-4 mb-sm-0" style={{ height: "50px" }} />
                     )
                 }
             </div>

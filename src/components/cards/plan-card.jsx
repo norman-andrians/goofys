@@ -13,7 +13,7 @@ function PlanCard (props) {
             classNames(
                 'plan-card',
                 'container-fluid',
-                'mx-2',
+                'mx-0',
                 'mx-xl-3',
                 'mb-5',
                 'mb-lg-0',

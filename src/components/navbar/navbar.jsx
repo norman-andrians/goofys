@@ -13,7 +13,7 @@ function Navbar(props) {
     );
 
     const linksmob = data.map((val) => {
-        return <li className="ff-open-sans btn btn-dark rounded-0 text-start py-3">{val.name}</li>
+        return <li className="ff-open-sans btn btn-dark rounded-0 text-start py-3 px-4">{val.name}</li>
     });
 
     const dropdown = () => {
@@ -21,7 +21,7 @@ function Navbar(props) {
     }
 
     return <nav className="h-navbar bg-dark py-4">
-        <div className="container d-flex justify-content-between align-items-center">
+        <div className="container-sm px-4 px-sm-0 d-flex justify-content-between align-items-center">
             <header className="d-flex align-items-center mt-2">
                 <div className="pb-1">
                     <img
@@ -56,7 +56,7 @@ function Navbar(props) {
                     {"h-height-250": drop}
                 )}>
                 {data == null ? "Undifined Navbar" : linksmob}
-                <li className="btn btn-light rounded-0 text-start py-3">Log In</li>
+                <li className="btn btn-light rounded-0 text-start py-3 px-4">Log In</li>
             </ul>
         </div>
     </nav>

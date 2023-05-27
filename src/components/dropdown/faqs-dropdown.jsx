@@ -11,9 +11,9 @@ function FAQDropdown(props) {
     const toggledrop = () => { setDrop(!drop); }
 
     return <div className="dropdown-faq ff-inter">
-        <button className="question" onClick={toggledrop}>
+        <button className="question text-start" onClick={toggledrop}>
             <div className="text">{question}</div>
-            <div className="icon">
+            <div className="icon ps-3">
                 <img src={ArrowDown} alt="arrow" style={{ transform: drop ? "rotateZ(180deg)" : "rotateZ(0deg)" }} />
             </div>
         </button>

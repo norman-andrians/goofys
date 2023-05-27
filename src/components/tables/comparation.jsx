@@ -28,10 +28,10 @@ function ComparationTable(props) {
             {
                 benefits.map((val) => 
                     <tr className='border-primary'>
-                        <td className='pt-5 pb-2 text-start'>{val.name}</td>
+                        <td className='pt-5 pb-4 pb-sm-2 text-start'>{val.name}</td>
                         {
                             val.rate.map((rate) => 
-                                <td className='text-center pt-5 pb-2'><ComparationIconValue val={rate} /></td>
+                                <td className='text-center pt-5 pb-4 pb-sm-2 align-middle'><ComparationIconValue val={rate} /></td>
                             )
                         }
                     </tr>
