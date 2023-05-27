@@ -1,15 +1,15 @@
 {
     "basic": [
-        "Full advice from professional game engineers",
+        "Full advice from professional devs",
         "Maximum 3 contributors",
-        "Assets supported Unity, Unreal, Godot, More",
+        "Assets supported.",
         "Unlimited management",
         "5 TB storage"
     ],
     "pro": [
         "Everything in basic plan",
-        "Unlimited Contributor and Collaborator",
-        "Unlimited Assets and Plugins for development",
+        "Unlimited Contributor",
+        "Unlimited Assets and Plugins",
         "Trufi SART Debugging",
         "10 TB storage"
     ],
