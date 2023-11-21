@@ -10,10 +10,9 @@ Feel free to customize.
 
 ## Installations
 
-Make sure you install [Node.js](https://nodejs.org) for local development, or you can use [Yarn](https://classic.yarnpkg.com/en/).
+Make sure you install [Node.js](https://nodejs.org) for local development.
 
-This project does not store React in the repo, so install these modules
-
+This project require:
 - react
 - react-dom
 - classnames
@@ -23,7 +22,12 @@ also I added bootstrap, I recommend using the latest version 5.3.0 or above
 
 or use the following command line
 ```
-npm install react react-dom classnames bootstrap@5.3.0-alpha3
+npm install
+```
+
+if you're using yarn
+```
+yarn
 ```
 
 ## Run
